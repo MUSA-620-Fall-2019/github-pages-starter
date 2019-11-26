@@ -1,15 +1,11 @@
 ---
-title: "1 Chart, 3 Libraries"
+title: "1 Chart, 2 Libraries"
 date: 2019-04-13
 published: true
-tags: [dataviz, altair, vega-lite, observable, holoviews]
+tags: [dataviz, altair, vega-lite, holoviews]
 excerpt: "Embedding interactive charts on static pages using Jekyll."
 altair-loader:
   altair-chart: "charts/measlesAltair.json"
-observable-loader:
-  url: https://api.observablehq.com/@nickhand/embedding-altair-plots-in-observable.js
-  names:
-    vega-chart: "heatmap"
 hv-loader:
   holoviews-chart: "charts/measlesHoloviews.html"
 toc: true
@@ -31,14 +27,6 @@ This was produced using Altair and embedded in this static web page. Note that y
 import altair as alt
 alt.renderers.enable('notebook')
 ```
-
-## Observable Example
-
-The same plot produced using Vega-Lite in Observable. See [this notebook](https://observablehq.com/@nickhand/embedding-altair-plots-in-observable) for more details.
-
-<div class="fullwidth">
-  <div id="vega-chart"></div>
-</div>
 
 ## Holoviews Example
 
