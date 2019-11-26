@@ -12,7 +12,7 @@ toc: true
 toc_sticky: true
 ---
 
-This post will show examples of embedding interactive charts produced using [Altair](https://altair-viz.github.io) and [hvplot][Holoviews](http://holoviews.org/index.html).
+This post will show examples of embedding interactive charts produced using [Altair](https://altair-viz.github.io) and [Holoviews](http://holoviews.org/index.html).
 
 ## Altair Example
 
