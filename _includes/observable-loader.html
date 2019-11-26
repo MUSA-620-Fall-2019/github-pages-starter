@@ -1,0 +1,34 @@
+{% comment %} Load and render Observable cells {% endcomment %}
+
+{% comment %} define a centered full-width {% endcomment %}
+<style>
+  .fullwidth {
+    display: flex;
+    justify-content: center;
+  }
+</style>
+{% comment %} load CSS for leaflet {% endcomment %}
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet/dist/leaflet.css"
+  integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+  crossorigin=""
+/>
+
+<script type="module">
+  import notebook from "{{ page.observable-loader.url }}";
+
+  const renders = {}
+  {% for name in page.observable-loader.names %}
+    renders["{{ name[1] }}"] = "#{{ name[0] }}"
+  {% endfor %}
+
+  import {Inspector, Runtime} from "https://unpkg.com/@observablehq/notebook-runtime@2?module";
+  for (let i in renders)
+    renders[i] = document.querySelector(renders[i]);
+
+  Runtime.load(notebook, (variable) => {
+    if (renders[variable.name])
+      return new Inspector(renders[variable.name]);
+  });
+</script>
