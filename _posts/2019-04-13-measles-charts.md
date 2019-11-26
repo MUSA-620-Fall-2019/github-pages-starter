@@ -5,9 +5,9 @@ published: true
 tags: [dataviz, altair, hvplot, holoviews]
 excerpt: "Embedding interactive charts on static pages using Jekyll."
 altair-loader:
-  altair-chart: "charts/measlesAltair.json"
+  altair-chart-1: "charts/measlesAltair.json"
 hv-loader:
-  holoviews-chart: "charts/measlesHvplot.html"
+  hv-chart-1: "charts/measlesHvplot.html"
 toc: true
 toc_sticky: true
 ---
@@ -18,7 +18,7 @@ This post will show examples of embedding interactive charts produced using [Alt
 
 Below is a chart of the incidence of measles since 1928 for the 50 US states.
 
-<div id="altair-chart"></div>
+<div id="altair-chart-1"></div>
 
 This was produced using Altair and embedded in this static web page. Note that you can also display Python code on this page:
 
@@ -31,7 +31,7 @@ alt.renderers.enable('notebook')
 
 Lastly, the measles incidence produced using the Holoviews package:
 
-<div id="holoviews-chart"></div>
+<div id="hv-chart-1"></div>
 
 ## Notes
 
