@@ -1,5 +1,5 @@
 ---
-title: "Embedding Folium charts"
+title: "Example: Embedding Folium charts"
 date: 2019-04-13
 published: true
 tags: [dataviz, folium]
@@ -15,10 +15,12 @@ This post will show examples of embedding interactive maps produced using [Foliu
 
 ## OSMnx and Street Networks
 
+The shortest route between Spring Garden Station and Frankford Hall:
+
 <div id="folium-chart-1"></div>
 
 ## Percentage of Households without Internet
 
 <div id="folium-chart-2"></div>
 
-See the [week 10 lecture slides](https://github.com/MUSA-620-Spring-2019/week-10/blob/master/lecture-10.ipynb) for the code that produced these plots.
+See the [week 9 lecture slides](https://github.com/MUSA-620-Fall-2019/week-9/blob/master/lecture-9.ipynb) for the code that produced these plots.

@@ -1,5 +1,5 @@
 ---
-title: "Analyzing the Impact of the Measles Vaccination"
+title: "Example: Embedding Altair & Hvplot Charts"
 date: 2019-04-13
 published: true
 tags: [dataviz, altair, hvplot, holoviews]
