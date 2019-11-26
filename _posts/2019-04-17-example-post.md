@@ -16,4 +16,4 @@ This is an example post. The posts are written in markdown.
 
 Below, we show the distance between residential sales and the average distance to the 5 nearest 311 calls for abandoned cars.
 
-![distances-abandonded-cars]({{ site.url }}{{ site.baseurl }}/assets/distance_to_abandoned_cars.png)
+![distances-abandonded-cars]({{ site.url }}{{ site.baseurl }}/assets/images/distance_to_abandoned_cars.png)
