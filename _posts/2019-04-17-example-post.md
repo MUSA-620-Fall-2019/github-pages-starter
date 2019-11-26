@@ -16,5 +16,5 @@ This is an example post. The posts are written in markdown.
 
 Below, we show the distance between residential sales and the average distance to the 5 nearest 311 calls for abandoned cars.
 
-![useful image]({{ site.url }}/assets/distance_to_abandoned_cars.png)
+<img src="assets/distance_to_abandoned_cars.png" width=450></img>
 
