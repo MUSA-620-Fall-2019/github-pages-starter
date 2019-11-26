@@ -7,7 +7,7 @@ excerpt: "Embedding interactive charts on static pages using Jekyll."
 altair-loader:
   altair-chart: "charts/measlesAltair.json"
 hv-loader:
-  holoviews-chart: "charts/measlesHoloviews.html"
+  holoviews-chart: "charts/measlesHvplot.html"
 toc: true
 toc_sticky: true
 ---
