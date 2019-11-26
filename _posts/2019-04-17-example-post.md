@@ -1,9 +1,9 @@
 ---
-title: "This is a Test"
+title: "Simple Example Post"
 date: 2019-04-17
 published: true
-tags: [dataviz, altair, vega-lite, observable, holoviews]
-excerpt: "Test"
+tags: [dataviz, altair, hvplot, holoviews]
+excerpt: "This is an example blog post"
 toc: true
 toc_sticky: true
 ---
