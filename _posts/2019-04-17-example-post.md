@@ -1,5 +1,5 @@
 ---
-title: "Simple Example Post"
+title: "Example: Embedding Matplotlib Images"
 date: 2019-04-17
 published: true
 tags: [dataviz, altair, hvplot, holoviews]
@@ -16,6 +16,4 @@ This is an example post. The posts are written in markdown.
 
 Below, we show the distance between residential sales and the average distance to the 5 nearest 311 calls for abandoned cars.
 
-![image-center]({{ site.url }}{{ site.baseurl }}/assets/distance_to_abandoned_cars.png)
-
-
+![distances-abandonded-cars]({{ site.url }}{{ site.baseurl }}/assets/distance_to_abandoned_cars.png)
