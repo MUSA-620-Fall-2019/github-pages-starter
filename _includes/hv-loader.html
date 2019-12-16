@@ -3,7 +3,7 @@
 <script>
 function resizeIFrameToFitContent( iFrame ) {
     iFrame.height = iFrame.contentWindow.document.body.scrollHeight;
-    console.log("HELLO", iFrame.contentWindow.document.body.scrollHeight);
+    console.log("HELLO 2", iFrame.ownerDocument.body.scrollHeight);
     if (iFrame.height == 0) iFrame.height = 500;
    
 }
