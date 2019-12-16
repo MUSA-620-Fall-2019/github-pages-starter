@@ -4,5 +4,5 @@ Takes page.custom-css-list variable and renders link tag for each item in it. {%
 endcomment %} {% for javascript in page.custom-javascript-list %}
 <script src="{{ javascript }}"></script>
 {% endfor %} {% for css in page.custom-css-list %}
-<link href="{{ site.baseurl }}/{{ css }}" rel="stylesheet" />
+<link href="{{ site.url }}{{ site.baseurl }}/{{ css }}" rel="stylesheet" />
 {% endfor %}
