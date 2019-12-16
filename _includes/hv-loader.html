@@ -1,9 +1,9 @@
 {% comment %} Load HTML files into an Iframe {% endcomment %}
 
 <script>
-  function resizeIframe(obj) {
-    obj.style.height = obj.contentWindow.document.body.scrollHeight + "px";
-  }
+function resizeIFrameToFitContent( iFrame ) {
+    iFrame.height = iFrame.contentWindow.document.body.scrollHeight;
+}
 </script>
 
 <script type="text/javascript">
@@ -13,8 +13,9 @@
       if (el===null)
         alert("Error: cannot embed HTML chart because the div element with id '{{ chart[0] }}' does not exist.")
       let spec = "{{ site.baseurl }}/{{ chart[1] }}";
-      console.log(spec);
+      console.log(spec, "HEY");
       el.innerHTML = `<iframe width="100%" frameborder="0" src="${spec}"></iframe>`;
+      resizeIFrameToFitContent( el );
     });
   {% endfor %}
 </script>
