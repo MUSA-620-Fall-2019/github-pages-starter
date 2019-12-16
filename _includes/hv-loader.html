@@ -14,7 +14,7 @@
         alert("Error: cannot embed HTML chart because the div element with id '{{ chart[0] }}' does not exist.")
       let spec = "{{ site.baseurl }}/{{ chart[1] }}";
       console.log(spec);
-      el.innerHTML = `<iframe width="100%" scrolling="no" frameborder="0" src="${spec}" onload="resizeIframe(this)"></iframe>`;
+      el.innerHTML = `<iframe width="100%" scrolling="no" frameborder="0" src="${spec}"></iframe>`;
     });
   {% endfor %}
 </script>
