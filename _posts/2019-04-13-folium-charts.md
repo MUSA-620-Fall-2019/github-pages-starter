@@ -7,7 +7,7 @@ excerpt: "Embedding interactive Folium charts on static pages using Jekyll."
 folium-loader:
   folium-chart-1: ["charts/foliumChart.html", "400"]
   folium-chart-2: ["charts/percent_no_internet.html", "400"]
-custom-css-scripts:
+custom-css-list:
   - "assets/css/leaflet.timedimension.control.min.css"
 toc: true
 toc_sticky: true
