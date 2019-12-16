@@ -1,9 +1,9 @@
 {% comment %} Load HTML files into an Iframe {% endcomment %}
 
 <script>
-function resizeIFrameToFitContent( obj ) {
-//     iFrame.height = iFrame.contentWindow.document.body.scrollHeight;
-    obj.style.height = obj.contentWindow.document.body.scrollHeight + "px";
+function resizeIFrameToFitContent( iFrame ) {
+    iFrame.height = iFrame.contentWindow.document.body.scrollHeight;
+   
 }
 </script>
 
@@ -28,7 +28,7 @@ function resizeIFrameToFitContent( obj ) {
       
       let iFrame = document.getElementById( "{{ chart[0] }}" + "-iframe" );
       iFrame.addEventListener("load", function() {
-          console.log(this);
+          console.log(this, "HEY");
           resizeIFrameToFitContent(this);
           console.log(this);
       });
