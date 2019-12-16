@@ -27,9 +27,11 @@ function resizeIFrameToFitContent( obj ) {
 //       el.innerHTML = `<iframe width="100%" frameborder="0" src="${spec}"></iframe>`;
       
       let iFrame = document.getElementById( "{{ chart[0] }}" + "-iframe" );
-      console.log("HELLO", iframe.contentWindow.document.body.scrollHeight );
-      console.log(iFrame);
-      resizeIFrameToFitContent( iFrame );
+      iFrame.addEventListener("load", function() {
+          console.log(this);
+          resizeIFrameToFitContent(this);
+          console.log(this);
+      });
     });
   {% endfor %}
 </script>
