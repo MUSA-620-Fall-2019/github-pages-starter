@@ -1,8 +1,9 @@
 {% comment %} Load HTML files into an Iframe {% endcomment %}
 
 <script>
-function resizeIFrameToFitContent( iFrame ) {
-    iFrame.height = iFrame.contentWindow.document.body.scrollHeight;
+function resizeIFrameToFitContent( obj ) {
+//     iFrame.height = iFrame.contentWindow.document.body.scrollHeight;
+    obj.style.height = obj.contentWindow.document.body.scrollHeight + "px";
 }
 </script>
 
