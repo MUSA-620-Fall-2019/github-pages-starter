@@ -33,7 +33,7 @@ function resizeIFrameToFitContent( iFrame ) {
 //           console.log(this, "HEY");
 //           resizeIFrameToFitContent(this);
           console.log(this);
-          console.log(this.contentWindow.document.scrollHeight, this.contentWindow.document);
+          console.log(this.contentWindow.document.scrollHeight, this.contentWindow.document.getElementByClass("bk"));
       });
     });
   {% endfor %}
