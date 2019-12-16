@@ -19,9 +19,10 @@ function resizeIFrameToFitContent( obj ) {
       let iframe = document.createElement('iframe');
       iframe.width = "100%";
       iframe.frameborder = 0;
-      iframe.scrolling = "no";
+//       iframe.scrolling = "no";
       iframe.id = "{{ chart[0] }}" + "-iframe";
       iframe.setAttribute("src", spec);
+      iframe.setAttribute("frameborder", 0);
       el.appendChild(iframe);
 //       el.innerHTML = `<iframe width="100%" frameborder="0" src="${spec}"></iframe>`;
       
