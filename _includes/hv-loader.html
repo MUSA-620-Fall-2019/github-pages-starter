@@ -14,11 +14,13 @@ function resizeIFrameToFitContent( iFrame ) {
         alert("Error: cannot embed HTML chart because the div element with id '{{ chart[0] }}' does not exist.")
       let spec = "{{ site.baseurl }}/{{ chart[1] }}";
       
-      console.log(spec, "HEY 2");
+      console.log(spec, "HEY");
       let iframe = document.createElement('iframe');
       iframe.width = "100%";
-      iframe.frameborder = "0";
+      iframe.frameborder = 0;
+      iframe.scrolling = "no";
       iframe.setAttribute("src", spec);
+        
         
       el.appendChild(iframe);
 //       el.innerHTML = `<iframe width="100%" frameborder="0" src="${spec}"></iframe>`;
